@@ -1,0 +1,35 @@
+# WordPress core (not versioned)
+/wp-admin/
+/wp-includes/
+/index.php
+/wp-*.php
+/xmlrpc.php
+/wp-config.php
+/wp-config-sample.php
+
+# Uploads and cache
+wp-content/uploads/
+wp-content/upgrade/
+wp-content/cache/
+
+# Plugins (installed separately, not versioned)
+wp-content/plugins/
+
+# Other themes (ignore common ones; astra-child is tracked)
+wp-content/themes/astra/
+wp-content/themes/astra-pro/
+wp-content/themes/twentytwentythree/
+wp-content/themes/twentytwentyfour/
+wp-content/themes/twentytwentyfive/
+
+# Claude Code & Superpowers session files
+.claude/
+.superpowers/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+*.swp
