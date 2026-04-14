@@ -456,3 +456,154 @@ header .ast-header-woo-cart {
 .woocommerce ins .amount {
     color: var(--accent) !important;
 }
+
+/* ================================================================
+   PRODUCT CARD（content-product.php）
+   ================================================================ */
+
+.products.columns-2,
+.products.columns-3,
+.products.columns-4,
+ul.products {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 2px !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    list-style: none !important;
+}
+
+@media (min-width: 1024px) {
+    ul.products {
+        grid-template-columns: repeat(3, 1fr) !important;
+    }
+}
+
+.studio-product-card {
+    background-color: var(--bg-card);
+    overflow: hidden;
+    transition: background-color 0.2s;
+    position: relative;
+}
+.studio-product-card:hover {
+    background-color: var(--bg-hover);
+}
+
+/* 圖片區域 */
+.studio-product-card__image-link {
+    display: block;
+    text-decoration: none;
+}
+.studio-product-card__image-wrap {
+    position: relative;
+    aspect-ratio: 1;
+    background-color: var(--bg-hover);
+    overflow: hidden;
+}
+.studio-product-card__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+.studio-product-card:hover .studio-product-card__img {
+    transform: scale(1.03);
+}
+
+/* 標籤 Badges */
+.studio-product-card__badges {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.studio-badge {
+    font-family: var(--font-condensed);
+    font-weight: 700;
+    font-size: 8px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 3px 8px;
+    display: inline-block;
+}
+.studio-badge--new {
+    background-color: var(--accent);
+    color: var(--bg-deep);
+}
+.studio-badge--digital {
+    background-color: #2a2220;
+    color: var(--accent);
+    border: 1px solid var(--accent);
+}
+.studio-badge--sale {
+    background-color: #cc2200;
+    color: #fff;
+}
+
+/* 商品資訊區 */
+.studio-product-card__info {
+    padding: 10px 12px 14px;
+}
+
+.studio-product-card__title-link {
+    text-decoration: none;
+}
+
+.studio-product-card__name {
+    font-family: var(--font-condensed);
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: var(--text-main);
+    margin-bottom: 8px;
+    line-height: 1.2;
+    transition: color 0.2s;
+}
+.studio-product-card:hover .studio-product-card__name {
+    color: var(--accent);
+}
+
+/* 底部：價格 + 加入按鈕 */
+.studio-product-card__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.studio-product-card__price .price,
+.studio-product-card__price .amount {
+    font-family: var(--font-condensed) !important;
+    font-size: 13px !important;
+    color: var(--text-main) !important;
+}
+
+.studio-product-card__add-btn {
+    font-family: var(--font-condensed);
+    font-size: 9px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--accent);
+    border: 1px solid var(--accent);
+    padding: 4px 10px;
+    background: transparent;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s;
+    text-decoration: none;
+    border-radius: 2px;
+}
+.studio-product-card__add-btn:hover {
+    background-color: var(--accent);
+    color: var(--bg-deep);
+}
+
+.studio-product-card__sold-out {
+    font-family: var(--font-condensed);
+    font-size: 9px;
+    letter-spacing: 1px;
+    color: var(--text-muted);
+    text-transform: uppercase;
+}
