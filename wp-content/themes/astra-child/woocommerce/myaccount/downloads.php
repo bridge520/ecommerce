@@ -13,7 +13,7 @@ $heading = apply_filters( 'woocommerce_endpoint_downloads_title', __( '我的數
 <?php if ( empty( $downloads ) ) : ?>
 
 	<div class="woocommerce-Message woocommerce-Message--info woocommerce-info">
-		<?php echo esc_html( __( '目前尚無可下載的商品。', 'astra-child' ) ); ?>
+		<?php esc_html_e( '目前尚無可下載的商品。', 'astra-child' ); ?>
 	</div>
 
 <?php else : ?>
@@ -21,10 +21,10 @@ $heading = apply_filters( 'woocommerce_endpoint_downloads_title', __( '我的數
 	<table class="woocommerce-table woocommerce-MyAccount-downloads shop_table shop_table_responsive">
 		<thead>
 			<tr>
-				<th><?php echo esc_html( __( '商品', 'astra-child' ) ); ?></th>
-				<th><?php echo esc_html( __( '剩餘下載次數', 'astra-child' ) ); ?></th>
-				<th><?php echo esc_html( __( '下載期限', 'astra-child' ) ); ?></th>
-				<th><?php echo esc_html( __( '下載', 'astra-child' ) ); ?></th>
+				<th scope="col"><?php esc_html_e( '商品', 'astra-child' ); ?></th>
+				<th scope="col"><?php esc_html_e( '剩餘下載次數', 'astra-child' ); ?></th>
+				<th scope="col"><?php esc_html_e( '下載期限', 'astra-child' ); ?></th>
+				<th scope="col"><?php esc_html_e( '下載', 'astra-child' ); ?></th>
 			</tr>
 		</thead>
 		<tbody>
@@ -34,7 +34,7 @@ $heading = apply_filters( 'woocommerce_endpoint_downloads_title', __( '我的數
 				<td>
 					<?php
 					if ( '' === $download['downloads_remaining'] ) {
-						echo esc_html( __( '無限制', 'astra-child' ) );
+						esc_html_e( '無限制', 'astra-child' );
 					} else {
 						echo esc_html( $download['downloads_remaining'] );
 					}
@@ -42,16 +42,17 @@ $heading = apply_filters( 'woocommerce_endpoint_downloads_title', __( '我的數
 				</td>
 				<td>
 					<?php
-					if ( empty( $download['access_expires'] ) ) {
-						echo esc_html( __( '無期限', 'astra-child' ) );
+					if ( empty( $download['access_expires'] ) || '0000-00-00 00:00:00' === $download['access_expires'] ) {
+						esc_html_e( '無期限', 'astra-child' );
 					} else {
 						echo esc_html( date_i18n( get_option( 'date_format' ), strtotime( $download['access_expires'] ) ) );
 					}
 					?>
 				</td>
 				<td>
+					<?php // $download['download_url'] is WooCommerce-generated and nonce-signed — do not construct manually. ?>
 					<a href="<?php echo esc_url( $download['download_url'] ); ?>" class="woocommerce-MyAccount-downloads-file button alt">
-						<?php echo esc_html( __( '下載', 'astra-child' ) ); ?>
+						<?php esc_html_e( '下載', 'astra-child' ); ?>
 					</a>
 				</td>
 			</tr>
