@@ -21,8 +21,7 @@ Text Domain:  astra-child
 }
 
 /* WooCommerce General */
-.woocommerce .button,
-.woocommerce button.button {
+.woocommerce .button {
     border-radius: 4px;
 }
 
