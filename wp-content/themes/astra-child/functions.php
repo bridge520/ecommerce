@@ -68,3 +68,37 @@ function astra_child_remove_extra_image_sizes( $sizes ) {
     unset( $sizes['2048x2048'] );
     return $sizes;
 }
+
+// ============================================================
+// 安全強化
+// ============================================================
+
+// 關閉 XML-RPC（防止暴力破解與 DDoS 攻擊）
+add_filter( 'xmlrpc_enabled', '__return_false' );
+
+// 移除 XML-RPC 相關的 <head> 連結
+remove_action( 'wp_head', 'rsd_link' );
+remove_action( 'wp_head', 'wlwmanifest_link' );
+
+// 防止使用者列舉（?author=N 探測帳號）
+add_action( 'template_redirect', 'astra_child_block_author_enum' );
+function astra_child_block_author_enum() {
+    if ( ! is_admin() && isset( $_GET['author'] ) ) {
+        wp_redirect( home_url( '/' ), 301 );
+        exit;
+    }
+}
+
+// 登入錯誤訊息模糊化（不透露帳號是否存在）
+add_filter( 'login_errors', 'astra_child_obscure_login_errors' );
+function astra_child_obscure_login_errors() {
+    return '帳號或密碼錯誤，請重試。';
+}
+
+// 移除登入頁面的 WordPress 版本 hint
+add_filter( 'login_headerurl', function() { return home_url(); } );
+
+// 停用檔案編輯器（防止後台直接編輯主題/插件程式碼）
+if ( ! defined( 'DISALLOW_FILE_EDIT' ) ) {
+    define( 'DISALLOW_FILE_EDIT', true );
+}
