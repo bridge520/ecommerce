@@ -35,7 +35,7 @@ if ( $product->is_in_stock() ) : ?>
         <?php endif; ?>
 
         <button type="submit" name="add-to-cart" value="<?php echo esc_attr( $product->get_id() ); ?>" class="single_add_to_cart_button button alt studio-product-single__cta">
-            加入購物車 — Add to Cart
+            <?php echo esc_html( $product->single_add_to_cart_text() ); ?>
         </button>
 
         <?php do_action( 'woocommerce_after_add_to_cart_button' ); ?>
