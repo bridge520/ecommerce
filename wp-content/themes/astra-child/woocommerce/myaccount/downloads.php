@@ -33,7 +33,7 @@ $heading = apply_filters( 'woocommerce_endpoint_downloads_title', __( '我的數
 				<td><?php echo esc_html( $download['product_name'] ); ?></td>
 				<td>
 					<?php
-					if ( 0 === $download['downloads_remaining'] ) {
+					if ( '' === $download['downloads_remaining'] ) {
 						echo esc_html( __( '無限制', 'astra-child' ) );
 					} else {
 						echo esc_html( $download['downloads_remaining'] );
