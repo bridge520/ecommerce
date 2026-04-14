@@ -22,6 +22,10 @@ wp-content/themes/twentytwentythree/
 wp-content/themes/twentytwentyfour/
 wp-content/themes/twentytwentyfive/
 
+# Claude Code & Superpowers session files
+.claude/
+.superpowers/
+
 # OS files
 .DS_Store
 Thumbs.db
