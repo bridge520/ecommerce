@@ -15,10 +15,12 @@ wp-content/cache/
 # Plugins (installed separately, not versioned)
 wp-content/plugins/
 
-# All themes EXCEPT our child theme
-wp-content/themes/
-!wp-content/themes/astra-child/
-!wp-content/themes/astra-child/**
+# Other themes (ignore common ones; astra-child is tracked)
+wp-content/themes/astra/
+wp-content/themes/astra-pro/
+wp-content/themes/twentytwentythree/
+wp-content/themes/twentytwentyfour/
+wp-content/themes/twentytwentyfive/
 
 # OS files
 .DS_Store
