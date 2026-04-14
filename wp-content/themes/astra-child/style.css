@@ -1,0 +1,34 @@
+/*
+Theme Name:   Astra Child
+Theme URI:    https://yourdomain.com
+Description:  Astra 子佈景主題，用於工作室電商客製化
+Author:       工作室名稱
+Author URI:   https://yourdomain.com
+Template:     astra
+Version:      1.0.0
+Text Domain:  astra-child
+*/
+
+/* 在此加入客製化 CSS */
+
+/* Hero Banner */
+.wp-block-cover.hero-banner {
+    min-height: 500px;
+}
+.wp-block-cover.hero-banner .wp-block-cover__inner-container h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+/* WooCommerce General */
+.woocommerce .button,
+.woocommerce button.button {
+    border-radius: 4px;
+}
+
+/* Language switcher in nav */
+.wpml-ls-statics-shortcode_actions {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 1rem;
+}
