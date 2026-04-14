@@ -607,3 +607,109 @@ ul.products {
     color: var(--text-muted);
     text-transform: uppercase;
 }
+
+/* ================================================================
+   SHOP PAGE（archive-product.php）
+   ================================================================ */
+
+.studio-shop {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* 頁首 */
+.studio-shop__header {
+    padding: 32px 0 0;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 2px;
+}
+
+.studio-shop__eyebrow {
+    font-family: var(--font-condensed);
+    font-size: 9px;
+    letter-spacing: 4px;
+    color: var(--accent);
+    text-transform: uppercase;
+    margin-bottom: 4px;
+}
+
+.studio-shop__title {
+    font-family: var(--font-condensed) !important;
+    font-weight: 900 !important;
+    font-size: clamp(28px, 5vw, 48px) !important;
+    letter-spacing: -1px !important;
+    text-transform: uppercase !important;
+    color: var(--text-main) !important;
+    line-height: 1 !important;
+    margin: 0 0 12px !important;
+}
+.studio-shop__title em {
+    font-family: var(--font-serif) !important;
+    font-style: italic !important;
+    font-size: 0.8em !important;
+    color: var(--accent) !important;
+    letter-spacing: 0 !important;
+}
+
+/* 商品數量 + 排序 */
+.studio-shop__meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+}
+
+.studio-shop__count .woocommerce-result-count {
+    font-family: var(--font-condensed);
+    font-size: 10px;
+    letter-spacing: 2px;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.studio-shop__ordering .woocommerce-ordering select {
+    background-color: var(--bg-card) !important;
+    color: var(--text-muted) !important;
+    border: 1px solid var(--border) !important;
+    border-radius: 0 !important;
+    font-family: var(--font-condensed) !important;
+    font-size: 10px !important;
+    letter-spacing: 1px !important;
+    padding: 6px 12px !important;
+}
+
+/* 篩選標籤列 */
+.studio-shop__filters {
+    display: flex;
+    gap: 6px;
+    padding: 12px 0;
+    border-bottom: 1px solid var(--border);
+    overflow-x: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+.studio-shop__filters::-webkit-scrollbar {
+    display: none;
+}
+
+.studio-filter-chip {
+    font-family: var(--font-condensed);
+    font-size: 9px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 5px 14px;
+    border: 1px solid var(--border);
+    color: var(--text-muted);
+    white-space: nowrap;
+    cursor: pointer;
+    border-radius: 2px;
+    text-decoration: none;
+    transition: border-color 0.2s, color 0.2s;
+}
+.studio-filter-chip:hover,
+.studio-filter-chip.is-active {
+    border-color: var(--accent);
+    color: var(--accent);
+}
