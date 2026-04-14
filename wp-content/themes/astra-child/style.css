@@ -332,3 +332,127 @@ header .ast-header-woo-cart {
 .home-section-viewall:hover {
     color: var(--accent);
 }
+
+/* ================================================================
+   WOOCOMMERCE GLOBAL
+   ================================================================ */
+
+/* WC 主按鈕 */
+.woocommerce a.button,
+.woocommerce button.button,
+.woocommerce input.button,
+.woocommerce #respond input#submit,
+.woocommerce .button.alt,
+.woocommerce button.button.alt,
+.woocommerce a.button.alt {
+    background-color: var(--accent) !important;
+    color: var(--bg-deep) !important;
+    font-family: var(--font-condensed) !important;
+    font-weight: 700 !important;
+    font-size: 11px !important;
+    letter-spacing: 3px !important;
+    text-transform: uppercase !important;
+    border-radius: 0 !important;
+    border: none !important;
+    padding: 12px 24px !important;
+    transition: background-color 0.2s !important;
+}
+.woocommerce a.button:hover,
+.woocommerce button.button:hover,
+.woocommerce a.button.alt:hover,
+.woocommerce button.button.alt:hover {
+    background-color: var(--accent-dim) !important;
+    color: var(--bg-deep) !important;
+}
+
+/* 次要按鈕（輸出頁、我的帳號） */
+.woocommerce a.button.secondary {
+    background-color: transparent !important;
+    color: var(--text-muted) !important;
+    border: 1px solid var(--border) !important;
+}
+.woocommerce a.button.secondary:hover {
+    border-color: var(--accent) !important;
+    color: var(--accent) !important;
+}
+
+/* WC 表單輸入 */
+.woocommerce form .input-text,
+.woocommerce input[type="text"],
+.woocommerce input[type="email"],
+.woocommerce input[type="tel"],
+.woocommerce input[type="password"],
+.woocommerce textarea,
+.woocommerce select {
+    background-color: var(--bg-card) !important;
+    color: var(--text-main) !important;
+    border: 1px solid var(--border) !important;
+    border-radius: 0 !important;
+    font-family: var(--font-body) !important;
+    font-size: 13px !important;
+    padding: 10px 14px !important;
+}
+.woocommerce form .input-text:focus,
+.woocommerce input[type="text"]:focus,
+.woocommerce input[type="email"]:focus {
+    border-color: var(--accent) !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+/* WC 訊息 / 通知 */
+.woocommerce-message,
+.woocommerce-info {
+    background-color: var(--bg-card) !important;
+    border-top-color: var(--accent) !important;
+    color: var(--text-main) !important;
+}
+.woocommerce-error {
+    background-color: var(--bg-card) !important;
+    border-top-color: #cc2200 !important;
+    color: var(--text-main) !important;
+}
+
+/* WC 麵包屑 */
+.woocommerce .woocommerce-breadcrumb {
+    font-family: var(--font-condensed) !important;
+    font-size: 10px !important;
+    letter-spacing: 2px !important;
+    color: var(--text-muted) !important;
+    text-transform: uppercase !important;
+}
+.woocommerce .woocommerce-breadcrumb a {
+    color: var(--text-muted) !important;
+}
+.woocommerce .woocommerce-breadcrumb a:hover {
+    color: var(--accent) !important;
+}
+
+/* WC 分頁 */
+.woocommerce nav.woocommerce-pagination ul li a,
+.woocommerce nav.woocommerce-pagination ul li span {
+    background-color: var(--bg-card) !important;
+    color: var(--text-muted) !important;
+    border-color: var(--border) !important;
+    font-family: var(--font-condensed) !important;
+    border-radius: 0 !important;
+}
+.woocommerce nav.woocommerce-pagination ul li a:hover,
+.woocommerce nav.woocommerce-pagination ul li span.current {
+    background-color: var(--accent) !important;
+    color: var(--bg-deep) !important;
+}
+
+/* 價格 */
+.woocommerce .price,
+.woocommerce .amount {
+    color: var(--text-main) !important;
+    font-family: var(--font-condensed) !important;
+    font-weight: 700 !important;
+}
+.woocommerce del .amount {
+    color: var(--text-muted) !important;
+}
+.woocommerce ins .amount {
+    color: var(--accent) !important;
+}
