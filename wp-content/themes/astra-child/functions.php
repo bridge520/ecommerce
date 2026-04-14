@@ -12,6 +12,13 @@ function astra_child_enqueue_styles() {
         array( 'astra-theme-css' ),
         wp_get_theme()->get( 'Version' )
     );
+    // 載入 Google Fonts：Barlow Condensed + Playfair Display + Noto Sans TC
+    wp_enqueue_style(
+        'astra-child-google-fonts',
+        'https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,700;0,900;1,700&family=Playfair+Display:ital,wght@0,700;1,700&family=Noto+Sans+TC:wght@300;400;500&display=swap',
+        array(),
+        null
+    );
 }
 
 // ============================================================

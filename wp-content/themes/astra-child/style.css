@@ -9,25 +9,50 @@ Version:      1.0.0
 Text Domain:  astra-child
 */
 
-/* 在此加入客製化 CSS */
+/* ================================================================
+   DESIGN TOKENS
+   ================================================================ */
+:root {
+    --bg-deep:       #181614;
+    --bg-card:       #242220;
+    --bg-hover:      #2e2a26;
+    --text-main:     #f2ede8;
+    --text-muted:    #8a8480;
+    --accent:        #e8845a;
+    --accent-dim:    #b86540;
+    --border:        #2e2a26;
 
-/* Hero Banner */
-.wp-block-cover.hero-banner {
-    min-height: 500px;
-}
-.wp-block-cover.hero-banner .wp-block-cover__inner-container h1 {
-    font-size: 2.5rem;
-    font-weight: 700;
+    --font-condensed: 'Barlow Condensed', sans-serif;
+    --font-serif:     'Playfair Display', serif;
+    --font-body:      'Noto Sans TC', sans-serif;
 }
 
-/* WooCommerce General */
-.woocommerce .button {
-    border-radius: 4px;
+/* ================================================================
+   GLOBAL RESET
+   ================================================================ */
+*, *::before, *::after {
+    box-sizing: border-box;
 }
 
-/* Language switcher in nav */
-.wpml-ls-statics-shortcode_actions {
-    display: inline-block;
-    vertical-align: middle;
-    margin-left: 1rem;
+body {
+    background-color: var(--bg-deep);
+    color: var(--text-main);
+    font-family: var(--font-body);
+    font-weight: 300;
+    -webkit-font-smoothing: antialiased;
+}
+
+a {
+    color: var(--accent);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+a:hover {
+    color: var(--accent-dim);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
