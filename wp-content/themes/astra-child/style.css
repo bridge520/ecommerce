@@ -713,3 +713,132 @@ ul.products {
     border-color: var(--accent);
     color: var(--accent);
 }
+
+/* ================================================================
+   SINGLE PRODUCT PAGE
+   ================================================================ */
+
+.woocommerce div.product {
+    background-color: var(--bg-deep);
+}
+
+/* 商品圖片區 */
+.woocommerce div.product div.images {
+    background-color: var(--bg-hover);
+}
+.woocommerce div.product div.images img {
+    object-fit: cover;
+}
+
+/* 商品分類標籤 */
+.studio-product-single__cats {
+    font-family: var(--font-condensed);
+    font-size: 9px;
+    letter-spacing: 4px;
+    color: var(--accent);
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.studio-product-single__cats a {
+    color: var(--accent);
+}
+
+/* 商品主標題 */
+.studio-product-single__title {
+    font-family: var(--font-condensed) !important;
+    font-weight: 900 !important;
+    font-size: clamp(28px, 5vw, 48px) !important;
+    letter-spacing: -1px !important;
+    text-transform: uppercase !important;
+    color: var(--text-main) !important;
+    line-height: 1 !important;
+    margin: 0 0 12px !important;
+}
+
+/* 價格 */
+.woocommerce div.product p.price,
+.woocommerce div.product span.price {
+    font-family: var(--font-condensed) !important;
+    font-weight: 700 !important;
+    font-size: 22px !important;
+    color: var(--text-main) !important;
+    margin: 12px 0 !important;
+}
+
+/* 商品描述 */
+.woocommerce div.product .woocommerce-product-details__short-description,
+.woocommerce div.product .woocommerce-Tabs-panel--description {
+    font-family: var(--font-body);
+    font-size: 13px;
+    color: var(--text-muted);
+    line-height: 1.8;
+}
+
+/* 購物車區域 */
+.studio-product-single__cart {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 16px;
+}
+
+/* 數量輸入 */
+.woocommerce div.product form.cart .quantity input.qty {
+    background-color: var(--bg-card) !important;
+    color: var(--text-main) !important;
+    border: 1px solid var(--border) !important;
+    border-radius: 0 !important;
+    font-family: var(--font-condensed) !important;
+    font-size: 14px !important;
+    width: 64px !important;
+    text-align: center !important;
+    padding: 10px !important;
+}
+
+/* 加入購物車主按鈕 */
+.studio-product-single__cta {
+    flex: 1;
+    text-align: center;
+    font-family: var(--font-condensed) !important;
+    font-weight: 700 !important;
+    font-size: 12px !important;
+    letter-spacing: 3px !important;
+    text-transform: uppercase !important;
+    background-color: var(--accent) !important;
+    color: var(--bg-deep) !important;
+    border: none !important;
+    border-radius: 0 !important;
+    padding: 14px 24px !important;
+    cursor: pointer;
+    transition: background-color 0.2s !important;
+}
+.studio-product-single__cta:hover {
+    background-color: var(--accent-dim) !important;
+}
+
+/* 商品 Tab（描述 / 評論） */
+.woocommerce div.product .woocommerce-tabs ul.tabs {
+    border-bottom: 1px solid var(--border) !important;
+}
+.woocommerce div.product .woocommerce-tabs ul.tabs li {
+    background-color: transparent !important;
+    border: none !important;
+    border-bottom: 2px solid transparent !important;
+}
+.woocommerce div.product .woocommerce-tabs ul.tabs li a {
+    font-family: var(--font-condensed) !important;
+    font-size: 11px !important;
+    letter-spacing: 2px !important;
+    text-transform: uppercase !important;
+    color: var(--text-muted) !important;
+}
+.woocommerce div.product .woocommerce-tabs ul.tabs li.active {
+    border-bottom-color: var(--accent) !important;
+}
+.woocommerce div.product .woocommerce-tabs ul.tabs li.active a {
+    color: var(--text-main) !important;
+}
