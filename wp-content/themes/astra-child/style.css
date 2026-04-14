@@ -37,8 +37,8 @@ Text Domain:  astra-child
 }
 
 body {
-    background-color: var(--bg-deep);
-    color: var(--text-main);
+    background-color: var(--bg-deep) !important;
+    color: var(--text-main) !important;
     font-family: var(--font-body);
     font-weight: 300;
     -webkit-font-smoothing: antialiased;
@@ -247,6 +247,56 @@ header .ast-header-woo-cart {
     transition: background-color 0.2s !important;
 }
 .site-hero .wp-block-button__link:hover {
+    background-color: var(--accent-dim) !important;
+}
+
+/* Hero 覆寫：相容現有 .hero-banner Cover Block 結構 */
+.wp-block-cover.hero-banner {
+    background-color: var(--bg-deep) !important;
+    background-image: none !important;
+    min-height: 70vh !important;
+}
+.wp-block-cover.hero-banner .wp-block-cover__inner-container {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+    padding: 48px 24px !important;
+    gap: 0 !important;
+}
+.wp-block-cover.hero-banner h1,
+.wp-block-cover.hero-banner .wp-block-heading {
+    font-family: var(--font-condensed) !important;
+    font-weight: 900 !important;
+    font-size: clamp(48px, 8vw, 96px) !important;
+    text-transform: uppercase !important;
+    color: var(--text-main) !important;
+    letter-spacing: -2px !important;
+    line-height: 0.95 !important;
+    margin-bottom: 16px !important;
+}
+.wp-block-cover.hero-banner p {
+    font-family: var(--font-condensed) !important;
+    font-size: 13px !important;
+    letter-spacing: 3px !important;
+    color: var(--text-muted) !important;
+    text-transform: uppercase !important;
+    margin-bottom: 32px !important;
+}
+.wp-block-cover.hero-banner .wp-block-button__link {
+    background-color: var(--accent) !important;
+    color: var(--bg-deep) !important;
+    font-family: var(--font-condensed) !important;
+    font-weight: 700 !important;
+    font-size: 11px !important;
+    letter-spacing: 3px !important;
+    text-transform: uppercase !important;
+    border-radius: 0 !important;
+    padding: 14px 32px !important;
+    border: none !important;
+    transition: background-color 0.2s !important;
+}
+.wp-block-cover.hero-banner .wp-block-button__link:hover {
     background-color: var(--accent-dim) !important;
 }
 
