@@ -15,7 +15,7 @@ $categories = wc_get_product_category_list( $product->get_id(), ' · ' );
     <div class="studio-product-single__cats">
         <?php echo wp_kses_post( strip_tags( $categories, '<a>' ) ); ?>
         <?php if ( $product->is_featured() ) : ?>
-            <span class="studio-badge studio-badge--new">New</span>
+            <span class="studio-badge studio-badge--new"><?php esc_html_e( 'New', 'astra-child' ); ?></span>
         <?php endif; ?>
     </div>
 <?php endif; ?>
