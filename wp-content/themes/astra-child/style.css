@@ -56,3 +56,96 @@ img {
     height: auto;
     display: block;
 }
+
+/* ================================================================
+   NAVIGATION
+   ================================================================ */
+
+/* 整體 header 背景 */
+.site-header,
+#masthead,
+.ast-header-wrap {
+    background-color: var(--bg-deep) !important;
+    border-bottom: 1px solid var(--border) !important;
+}
+
+/* Sticky nav */
+.ast-header-sticked {
+    background-color: var(--bg-deep) !important;
+}
+
+/* 導覽連結顏色 */
+.main-header-menu .menu-item > a,
+.main-navigation .menu-item > a {
+    color: var(--text-muted) !important;
+    font-family: var(--font-condensed) !important;
+    font-size: 11px !important;
+    letter-spacing: 1px !important;
+    text-transform: uppercase !important;
+    transition: color 0.2s !important;
+}
+.main-header-menu .menu-item > a:hover,
+.main-navigation .menu-item > a:hover {
+    color: var(--text-main) !important;
+}
+
+/* 購物車連結 */
+.ast-cart-menu-wrap .count,
+.woocommerce-mini-cart__buttons .button,
+header .ast-header-woo-cart {
+    color: var(--accent) !important;
+    border: 1px solid var(--accent) !important;
+    border-radius: 2px !important;
+    font-family: var(--font-condensed) !important;
+    font-weight: 700 !important;
+    letter-spacing: 1px !important;
+    padding: 3px 10px !important;
+}
+
+/* Site Title（如使用文字 Logo） */
+.site-title a,
+.ast-site-identity .site-title a {
+    font-family: var(--font-condensed) !important;
+    font-weight: 900 !important;
+    font-size: 20px !important;
+    letter-spacing: -0.5px !important;
+    text-transform: uppercase !important;
+    color: var(--text-main) !important;
+}
+
+/* Site Tagline（副標，顯示斜體橘色） */
+.site-description,
+.ast-site-identity .site-description {
+    font-family: var(--font-serif) !important;
+    font-style: italic !important;
+    font-size: 10px !important;
+    color: var(--accent) !important;
+    letter-spacing: 1px !important;
+}
+
+/* ================================================================
+   FOOTER
+   ================================================================ */
+.site-footer,
+#colophon {
+    background-color: #0d0b0a !important;
+    border-top: 1px solid var(--border) !important;
+    color: var(--text-muted) !important;
+}
+
+.site-footer a {
+    color: var(--text-muted) !important;
+    font-family: var(--font-condensed) !important;
+    font-size: 10px !important;
+    letter-spacing: 1px !important;
+    text-transform: uppercase !important;
+}
+.site-footer a:hover {
+    color: var(--accent) !important;
+}
+
+.site-footer .ast-footer-copyright {
+    font-size: 9px !important;
+    color: #3a3530 !important;
+    letter-spacing: 1px !important;
+}
