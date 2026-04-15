@@ -40,7 +40,7 @@ body {
     background-color: var(--bg-deep) !important;
     color: var(--text-main) !important;
     font-family: var(--font-body);
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 300;
     line-height: 1.75;
     -webkit-font-smoothing: antialiased;
@@ -83,7 +83,7 @@ img {
 .main-navigation .menu-item > a {
     color: var(--text-muted) !important;
     font-family: var(--font-condensed) !important;
-    font-size: 15px !important;
+    font-size: 19px !important;
     letter-spacing: 1px !important;
     text-transform: uppercase !important;
     transition: color 0.2s !important;
@@ -118,7 +118,7 @@ header .ast-header-woo-cart {
 .ast-site-identity .site-title a {
     font-family: var(--font-condensed) !important;
     font-weight: 900 !important;
-    font-size: 20px !important;
+    font-size: 24px !important;
     letter-spacing: -0.5px !important;
     text-transform: uppercase !important;
     color: var(--text-main) !important;
@@ -129,7 +129,7 @@ header .ast-header-woo-cart {
 .ast-site-identity .site-description {
     font-family: var(--font-serif) !important;
     font-style: italic !important;
-    font-size: 12px !important;
+    font-size: 16px !important;
     color: var(--accent) !important;
     letter-spacing: 1px !important;
 }
@@ -147,7 +147,7 @@ header .ast-header-woo-cart {
 .site-footer a {
     color: var(--text-muted) !important;
     font-family: var(--font-condensed) !important;
-    font-size: 12px !important;
+    font-size: 16px !important;
     letter-spacing: 1px !important;
     text-transform: uppercase !important;
 }
@@ -156,7 +156,7 @@ header .ast-header-woo-cart {
 }
 
 .site-footer .ast-footer-copyright {
-    font-size: 11px !important;
+    font-size: 15px !important;
     color: var(--text-dim) !important;
     letter-spacing: 1px !important;
 }
@@ -195,7 +195,7 @@ header .ast-header-woo-cart {
 .site-hero .hero-eyebrow,
 .site-hero p.hero-eyebrow {
     font-family: var(--font-condensed) !important;
-    font-size: 12px !important;
+    font-size: 16px !important;
     letter-spacing: 4px !important;
     color: var(--accent) !important;
     text-transform: uppercase !important;
@@ -227,7 +227,7 @@ header .ast-header-woo-cart {
 
 /* Hero 副標（段落） */
 .site-hero .wp-block-cover__inner-container p:not(.hero-eyebrow) {
-    font-size: 14px !important;
+    font-size: 18px !important;
     color: var(--text-muted) !important;
     letter-spacing: 1px !important;
     margin-top: 10px !important;
@@ -240,7 +240,7 @@ header .ast-header-woo-cart {
     color: var(--bg-deep) !important;
     font-family: var(--font-condensed) !important;
     font-weight: 700 !important;
-    font-size: 13px !important;
+    font-size: 17px !important;
     letter-spacing: 3px !important;
     text-transform: uppercase !important;
     border-radius: 0 !important;
@@ -279,7 +279,7 @@ header .ast-header-woo-cart {
 }
 .wp-block-cover.hero-banner p {
     font-family: var(--font-condensed) !important;
-    font-size: 15px !important;
+    font-size: 19px !important;
     letter-spacing: 3px !important;
     color: var(--text-muted) !important;
     text-transform: uppercase !important;
@@ -290,7 +290,7 @@ header .ast-header-woo-cart {
     color: var(--bg-deep) !important;
     font-family: var(--font-condensed) !important;
     font-weight: 700 !important;
-    font-size: 13px !important;
+    font-size: 17px !important;
     letter-spacing: 3px !important;
     text-transform: uppercase !important;
     border-radius: 0 !important;
@@ -317,7 +317,7 @@ header .ast-header-woo-cart {
     display: inline-block;
     font-family: var(--font-condensed);
     font-weight: 900;
-    font-size: 14px;
+    font-size: 18px;
     letter-spacing: 4px;
     text-transform: uppercase;
     color: var(--bg-deep);
@@ -346,7 +346,7 @@ header .ast-header-woo-cart {
 
 .home-section-eyebrow {
     font-family: var(--font-condensed);
-    font-size: 11px;
+    font-size: 15px;
     letter-spacing: 4px;
     color: var(--accent);
     text-transform: uppercase;
@@ -356,7 +356,7 @@ header .ast-header-woo-cart {
 .home-section-title {
     font-family: var(--font-condensed);
     font-weight: 900;
-    font-size: 32px;
+    font-size: 36px;
     letter-spacing: -1px;
     text-transform: uppercase;
     color: var(--text-main);
@@ -366,14 +366,14 @@ header .ast-header-woo-cart {
 .home-section-title em {
     font-family: var(--font-serif);
     font-style: italic;
-    font-size: 26px;
+    font-size: 30px;
     color: var(--accent);
     letter-spacing: 0;
 }
 
 .home-section-viewall {
     font-family: var(--font-condensed);
-    font-size: 12px;
+    font-size: 16px;
     letter-spacing: 2px;
     color: var(--text-muted);
     text-transform: uppercase;
@@ -401,7 +401,7 @@ header .ast-header-woo-cart {
     color: var(--bg-deep) !important;
     font-family: var(--font-condensed) !important;
     font-weight: 700 !important;
-    font-size: 13px !important;
+    font-size: 17px !important;
     letter-spacing: 3px !important;
     text-transform: uppercase !important;
     border-radius: 0 !important;
@@ -441,7 +441,7 @@ header .ast-header-woo-cart {
     border: 1px solid var(--border) !important;
     border-radius: 0 !important;
     font-family: var(--font-body) !important;
-    font-size: 15px !important;
+    font-size: 19px !important;
     padding: 10px 14px !important;
 }
 .woocommerce form .input-text:focus,
@@ -468,7 +468,7 @@ header .ast-header-woo-cart {
 /* WC 麵包屑 */
 .woocommerce .woocommerce-breadcrumb {
     font-family: var(--font-condensed) !important;
-    font-size: 12px !important;
+    font-size: 16px !important;
     letter-spacing: 2px !important;
     color: var(--text-muted) !important;
     text-transform: uppercase !important;
@@ -607,7 +607,7 @@ ul.products {
 .studio-product-card__name {
     font-family: var(--font-condensed);
     font-weight: 700;
-    font-size: 17px;
+    font-size: 21px;
     letter-spacing: 0.5px;
     text-transform: uppercase;
     color: var(--text-main);
@@ -630,14 +630,14 @@ ul.products {
 .studio-product-card__price .price,
 .studio-product-card__price .amount {
     font-family: var(--font-condensed) !important;
-    font-size: 17px !important;
+    font-size: 21px !important;
     font-weight: 700 !important;
     color: var(--text-main) !important;
 }
 
 .studio-product-card__add-btn {
     font-family: var(--font-condensed);
-    font-size: 12px;
+    font-size: 16px;
     letter-spacing: 1px;
     text-transform: uppercase;
     color: var(--accent);
@@ -656,7 +656,7 @@ ul.products {
 
 .studio-product-card__sold-out {
     font-family: var(--font-condensed);
-    font-size: 12px;
+    font-size: 16px;
     letter-spacing: 1px;
     color: var(--text-muted);
     text-transform: uppercase;
@@ -681,7 +681,7 @@ ul.products {
 
 .studio-shop__eyebrow {
     font-family: var(--font-condensed);
-    font-size: 11px;
+    font-size: 15px;
     letter-spacing: 4px;
     color: var(--accent);
     text-transform: uppercase;
@@ -716,7 +716,7 @@ ul.products {
 
 .studio-shop__count .woocommerce-result-count {
     font-family: var(--font-condensed);
-    font-size: 14px;
+    font-size: 18px;
     letter-spacing: 2px;
     color: var(--text-muted);
     text-transform: uppercase;
@@ -729,7 +729,7 @@ ul.products {
     border: 1px solid var(--border) !important;
     border-radius: 0 !important;
     font-family: var(--font-condensed) !important;
-    font-size: 14px !important;
+    font-size: 18px !important;
     letter-spacing: 1px !important;
     padding: 6px 12px !important;
 }
@@ -750,7 +750,7 @@ ul.products {
 
 .studio-filter-chip {
     font-family: var(--font-condensed);
-    font-size: 11px;
+    font-size: 15px;
     letter-spacing: 2px;
     text-transform: uppercase;
     padding: 5px 14px;
@@ -787,7 +787,7 @@ ul.products {
 /* 商品分類標籤 */
 .studio-product-single__cats {
     font-family: var(--font-condensed);
-    font-size: 11px;
+    font-size: 15px;
     letter-spacing: 4px;
     color: var(--accent);
     text-transform: uppercase;
@@ -817,7 +817,7 @@ ul.products {
 .woocommerce div.product span.price {
     font-family: var(--font-condensed) !important;
     font-weight: 700 !important;
-    font-size: 22px !important;
+    font-size: 26px !important;
     color: var(--text-main) !important;
     margin: 12px 0 !important;
 }
@@ -826,7 +826,7 @@ ul.products {
 .woocommerce div.product .woocommerce-product-details__short-description,
 .woocommerce div.product .woocommerce-Tabs-panel--description {
     font-family: var(--font-body);
-    font-size: 16px;
+    font-size: 20px;
     color: var(--text-muted);
     line-height: 1.85;
 }
@@ -847,7 +847,7 @@ ul.products {
     border: 1px solid var(--border) !important;
     border-radius: 0 !important;
     font-family: var(--font-condensed) !important;
-    font-size: 16px !important;
+    font-size: 20px !important;
     width: 64px !important;
     text-align: center !important;
     padding: 10px !important;
@@ -859,7 +859,7 @@ ul.products {
     text-align: center;
     font-family: var(--font-condensed) !important;
     font-weight: 700 !important;
-    font-size: 14px !important;
+    font-size: 18px !important;
     letter-spacing: 3px !important;
     text-transform: uppercase !important;
     background-color: var(--accent) !important;
@@ -885,7 +885,7 @@ ul.products {
 }
 .woocommerce div.product .woocommerce-tabs ul.tabs li a {
     font-family: var(--font-condensed) !important;
-    font-size: 13px !important;
+    font-size: 17px !important;
     letter-spacing: 2px !important;
     text-transform: uppercase !important;
     color: var(--text-muted) !important;
